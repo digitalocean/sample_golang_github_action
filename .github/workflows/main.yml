@@ -10,7 +10,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: DigitalOcean App Platform deployment
-      uses: ParamPatel207/app_action@main
+      uses: ParamPatel207/app_action@updated-building
       with:
         app_name: sample-golang
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}

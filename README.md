@@ -32,7 +32,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: DigitalOcean App Platform deployment
-      uses: ParamPatel207/app_action@main
+      uses: digitalocean/app_action@main
       with:
         app_name: sample-golang
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
@@ -40,11 +40,11 @@ jobs:
 
 ## How its using DigitalOcean App Platform App Actions?
 
-This example is using [DigitalOcean App Platform App Actions](https://github.com/ParamPatel207/app_action) in the .github/workflows/main.yml file to auto-deploy your app.
+This example is using [DigitalOcean App Platform App Actions](https://github.com/digitalocean/app_action) in the .github/workflows/main.yml file to auto-deploy your app.
 
 ```yaml
 - name: DigitalOcean App Platform deployment
-  uses: ParamPatel207/app_action@main
+  uses: digitalocean/app_action@main
   with:
     app_name: sample-golang
     token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
